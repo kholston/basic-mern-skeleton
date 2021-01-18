@@ -2,7 +2,7 @@
   "name": "collab-collective",
   "version": "1.0.0",
   "description": "a social media platform for collaboration",
-  "main": "main.js",
+  "main": "index.js",
   "author": "Ken Holston(Work) <git.kholston@gmail.com>",
   "license": "MIT",
   "private": true,
@@ -16,7 +16,8 @@
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
-    "helmet": "^4.3.1"
+    "helmet": "^4.3.1",
+    "mongoose": "^5.11.12"
   },
   "devDependencies": {
     "@babel/core": "^7.12.10",
