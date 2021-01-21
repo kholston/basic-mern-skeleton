@@ -4,10 +4,12 @@ import cookieParser from "cookie-parser";
 import compress from "compression";
 import cors from "cors";
 import helmet from "helmet";
+import devBundle from "./devBundle"; //Developement Mode only
 import userRoutes from "./routes/user.routes";
 import authRoutes from "./routes/auth.routes";
 
 const app = express();
+devBundle.compile(app);
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
