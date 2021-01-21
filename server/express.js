@@ -1,4 +1,5 @@
 import express from "express";
+import path from "path";
 import bodyParser from "body-parser";
 import cookieParser from "cookie-parser";
 import compress from "compression";
@@ -8,6 +9,7 @@ import devBundle from "./devBundle"; //Developement Mode only
 import userRoutes from "./routes/user.routes";
 import authRoutes from "./routes/auth.routes";
 
+const CURRENT_WORKING_DIRECTORY = process.cwd();
 const app = express();
 devBundle.compile(app);
 
@@ -17,6 +19,7 @@ app.use(cookieParser());
 app.use(compress());
 app.use(helmet());
 app.use(cors());
+app.use("/dist", express.static(path.join(CURRENT_WORKING_DIRECTORY, "dist")));
 
 app.use("/", userRoutes);
 app.use("/", authRoutes);
