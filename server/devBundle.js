@@ -1,4 +1,4 @@
-import config from "./config/config";
+import config from "./../config/config";
 import webpack from "webpack";
 import webpackMiddleware from "webpack-hot-middleware";
 import webpackConfig from "./../webpack.config.client";
@@ -14,4 +14,4 @@ const compile = (app) => {
   }
 };
 
-export default compile;
+export default {compile};

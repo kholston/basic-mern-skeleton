@@ -48,6 +48,7 @@ const read = (req, res) => {
   req.profile.salt = undefined;
   return res.json(req.profile);
 };
+
 const update = async (req, res, next) => {
   try {
     let user = req.profile;
