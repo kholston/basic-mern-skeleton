@@ -2,7 +2,7 @@
   "name": "collab-collective",
   "version": "1.0.0",
   "description": "a social media platform for collaboration",
-  "main": "index.js",
+  "main": "main.js",
   "author": "Ken Holston(Work) <git.kholston@gmail.com>",
   "license": "MIT",
   "private": true,

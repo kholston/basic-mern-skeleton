@@ -8,6 +8,7 @@ import helmet from "helmet";
 import devBundle from "./devBundle"; //Developement Mode only
 import userRoutes from "./routes/user.routes";
 import authRoutes from "./routes/auth.routes";
+import Template from './../template';
 
 const CURRENT_WORKING_DIRECTORY = process.cwd();
 const app = express();
@@ -36,5 +37,9 @@ app.use((err, req, res, next) => {
     console.log(err);
   }
 });
+
+app.get('/', (req,res)=>{
+  res.status(200).send(Template());
+})
 
 export default app;
