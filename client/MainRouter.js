@@ -11,3 +11,5 @@ const MainRouter = () =>{
         </div>
     )
 }
+
+export default MainRouter;
