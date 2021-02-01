@@ -37,7 +37,7 @@ const Home = () => {
       />
       <CardContent>
         <Typography variant="body2" component="p">
-          Welcome to Basic Homepage.
+          Welcome to MERN Skeleton Homepage.
         </Typography>
       </CardContent>
     </Card>
