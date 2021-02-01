@@ -1,5 +1,3 @@
-import { response } from "express";
-
 const signin = async(user) =>{
     try {
         let response = await fetch('/auth/signin',{
